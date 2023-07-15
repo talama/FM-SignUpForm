@@ -1,0 +1,100 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("..assets/fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("..assets/fonts/poppins-v20-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("..assets/fonts/poppins-v20-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("..assets/fonts/poppins-v20-latin-700.woff2") format("woff2");
+}
+
+:root {
+  /* Colors */
+  --primary-red: 0, 100%, 74%;
+  --primary-green: 154, 59%, 51%;
+
+  --accent-blue: 248, 32%, 49%;
+
+  --neutral-dark-blue: 249, 10%, 26%;
+  --neutral-gray-blue: 246, 25%, 77%;
+
+  /* Fonts */
+  --font-family: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semiBold: 600;
+  --fw-bold: 700;
+
+  --fs-400: 1.125rem; /* 16px */
+  --fs-500: 1.25rem; /* 20px */
+  --fs-600: 1.5rem; /* 24px */
+  --fs-700: 1.75rem; /* 28px */
+  --fs-800: 2rem; /* 32px */
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Attribution */
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6875rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.attribution a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
