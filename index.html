@@ -11,7 +11,7 @@
     />
     <link
       rel="preload"
-      href="/assets/fonts/poppins-v20-latin-regular.woff2"
+      href="./assets/fonts/poppins-v20-latin-regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -27,6 +27,39 @@
     <title>Sign up form</title>
   </head>
   <body>
+    <main>
+      <section class="sign-up-form">
+        <header>
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </header>
+        <div class="sign-up">
+          <p class="price">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </p>
+          <form action="#" method="post" class="free-trial">
+            <label for="first-name">First Name</label>
+            <input required type="text" name="first-name" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input required type="text" name="last-name" id="last-name" />
+            <label for="email">Email Address</label>
+            <input required type="email" name="email" id="email" />
+            <label for="password">Password</label>
+            <input required type="password" name="password" id="password" />
+            <button type="submit">Claim your free trial</button>
+          </form>
+          <p class="disclaimer">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="terms">Terms and Services</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <p class="attribution">
         Challenge by

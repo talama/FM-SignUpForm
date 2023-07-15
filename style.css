@@ -3,28 +3,28 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("..assets/fonts/poppins-v20-latin-regular.woff2") format("woff2");
+  src: url("assets/fonts/poppins-v20-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url("..assets/fonts/poppins-v20-latin-500.woff2") format("woff2");
+  src: url("assets/fonts/poppins-v20-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("..assets/fonts/poppins-v20-latin-600.woff2") format("woff2");
+  src: url("assets/fonts/poppins-v20-latin-600.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("..assets/fonts/poppins-v20-latin-700.woff2") format("woff2");
+  src: url("assets/fonts/poppins-v20-latin-700.woff2") format("woff2");
 }
 
 :root {
@@ -38,7 +38,7 @@
   --neutral-gray-blue: 246, 25%, 77%;
 
   /* Fonts */
-  --font-family: "Poppins", sans-serif;
+  --font-family: var(--font-family);
 
   --fw-regular: 400;
   --fw-medium: 500;
@@ -60,7 +60,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: "Poppins";
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
