@@ -164,11 +164,10 @@ select {
   box-shadow: 0 0.6rem 0rem hsla(0, 0%, 0%, 0.2);
 
   display: grid;
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 /* Form item */
-
 .form-item {
   display: grid;
 }
@@ -205,6 +204,20 @@ select {
   font-size: var(--fs-300);
   font-weight: var(--fw-semiBold);
   font-style: italic;
+}
+
+.error-icon,
+.error-text {
+  display: none;
+}
+
+.form-item.error .error-icon,
+.form-item.error .error-text {
+  display: block;
+}
+
+.form-item.error input {
+  border: 3px solid hsl(var(--primary-red));
 }
 
 /* Form button */
