@@ -31,14 +31,13 @@
   /* Colors */
   --primary-red: 0, 100%, 74%;
   --primary-green: 154, 59%, 51%;
-
   --accent-blue: 248, 32%, 49%;
-
   --neutral-dark-blue: 249, 10%, 26%;
   --neutral-gray-blue: 246, 25%, 77%;
+  --white: white;
 
   /* Fonts */
-  --font-family: var(--font-family);
+  --font-family: "Poppins", sans-serif;
 
   --fw-regular: 400;
   --fw-medium: 500;
@@ -52,7 +51,7 @@
   --fs-600: 1.5rem; /* 24px */
   --fs-700: 1.75rem; /* 28px */
   --fs-800: 2rem; /* 32px */
-  --fs-900: 3rem;
+  --fs-900: 3rem; /* 48px */
 }
 
 /* CSS reset */
@@ -64,7 +63,7 @@
 }
 
 body {
-  font-family: "Poppins";
+  font-family: var(--font-family);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -94,107 +93,109 @@ select {
   width: 1px;
 }
 
-.sign-up-form {
+/* Main section */
+.subscription {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1440px;
-  height: 800px;
+
+  max-width: 1440px;
+  width: 90%;
+  max-height: 800px;
+  height: 70%;
   background-color: hsl(var(--primary-red));
   background-image: url("./assets/imgs/bg-intro-desktop.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  background-position: center;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
 }
 
-.sign-up-form header {
+/* Header */
+.info {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
+  color: var(--white);
   padding-left: 10rem;
 }
 
-.sign-up-form h1 {
+.info h1 {
   font-size: var(--fs-900);
-  align-self: end;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
-.description {
+.info p {
   font-size: var(--fs-400);
   font-weight: var(--fw-medium);
 }
 
-.sign-up {
+/* Form section */
+.form-section {
   display: grid;
-  justify-items: center;
-  align-items: center;
-  gap: 2rem;
-
+  gap: 1.5rem;
   padding-right: 10rem;
-  padding-left: 3rem;
 }
 
-.price {
-  width: 100%;
+.trial-info {
   text-align: center;
-  font-weight: var(--fw-regular);
+  color: var(--white);
   font-size: var(--fs-400);
-  background: hsl(var(--accent-blue));
+  font-weight: var(--fw-medium);
+  padding: 1.3rem 1rem;
+  border-radius: 10px;
+  background-color: hsl(var(--accent-blue));
   box-shadow: 0 0.6rem 0rem hsla(0, 0%, 0%, 0.2);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  align-self: end;
 }
 
-.price span {
+.trial-info span {
   font-weight: var(--fw-bold);
 }
 
-.free-trial {
-  width: 100%;
-  background: #fff;
+/* Form */
+.trial-form {
+  background-color: var(--white);
   padding: 2.5rem;
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 0 0.6rem 0rem hsla(0, 0%, 0%, 0.2);
-  align-self: start;
 
   display: grid;
   gap: 1rem;
 }
+
+/* Form item */
 
 .form-item {
   display: grid;
 }
 
 .flex-grp {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .form-item input {
   width: 100%;
-  height: 3.5rem;
-  font-size: var(--fs-400);
+  padding: 1.2rem 1.2rem 1.2rem 1.7rem;
+  border: 1px solid hsl(var(--neutral-gray-blue));
+  border-radius: 5px;
   font-weight: var(--fw-medium);
   color: hsl(var(--neutral-dark-blue));
-  padding-left: 1.5rem;
-  border: solid 1px hsl(var(--neutral-gray-blue));
-  border-radius: 0.2rem;
 }
 
-.form-item input:focus,
-.form-item input:active {
+.form-item input:focus-visible {
   outline: none;
   border: solid 1px hsl(var(--neutral-dark-blue));
 }
 
 .error-icon {
   position: absolute;
-  right: 1.5rem;
+  right: 10px;
 }
 
 .error-text {
@@ -206,20 +207,7 @@ select {
   font-style: italic;
 }
 
-.disclaimer {
-  text-align: center;
-  font-size: var(--fs-300);
-  font-weight: var(--fw-medium);
-  color: hsl(var(--neutral-gray-blue));
-}
-
-.terms,
-.terms {
-  color: hsl(var(--primary-red));
-  font-weight: var(--fw-bold);
-  text-decoration: none;
-}
-
+/* Form button */
 .btn {
   background: hsl(var(--primary-green));
   color: #fff;
@@ -235,6 +223,20 @@ select {
 
 .btn:hover {
   background: hsla(var(--primary-green), 0.8);
+}
+
+/* Terms */
+.disclaimer {
+  text-align: center;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-medium);
+  color: hsl(var(--neutral-gray-blue));
+}
+
+.terms {
+  color: hsl(var(--primary-red));
+  font-weight: var(--fw-bold);
+  text-decoration: none;
 }
 
 /* Attribution */
