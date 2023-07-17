@@ -102,8 +102,7 @@ select {
 
   max-width: 1440px;
   width: 100%;
-  min-height: 800px;
-  height: 70%;
+  height: 800px;
   background-color: hsl(var(--primary-red));
   background-image: url("./assets/imgs/bg-intro-desktop.png");
   background-repeat: no-repeat;
@@ -113,15 +112,14 @@ select {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  align-items: center;
 }
 
 /* Header */
 .info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1.5rem;
   color: var(--white);
-  justify-content: center;
   margin-left: 20%;
 }
 
@@ -141,7 +139,6 @@ select {
   gap: 1.5rem;
   align-items: center;
   justify-content: left;
-  padding-right: 10%;
 }
 
 .trial-info {
@@ -211,6 +208,7 @@ select {
   font-style: italic;
 }
 
+/* Error icon and text diplay */
 .error-icon,
 .error-text {
   display: none;
@@ -272,3 +270,52 @@ select {
   text-decoration: none;
   color: hsl(228, 45%, 44%);
 }
+
+/* Media queries for desktop version */
+@media only screen and (max-width: 1200px) {
+  .subscription {
+    gap: 1.5rem;
+  }
+  .info {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .form-section {
+    margin-right: 5%;
+  }
+  .subscription {
+    gap: 1rem;
+  }
+  .info {
+    margin-left: 5%;
+  }
+  .trial-form {
+    padding: 2rem;
+  }
+  .form-item input {
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .form-section {
+    margin-right: 5%;
+  }
+
+  .subscription {
+    gap: 1rem;
+  }
+  .info {
+    margin-left: 5%;
+  }
+  .trial-form {
+    padding: 2rem;
+  }
+  .form-item input {
+    padding: 0.7rem 0.7rem 0.7rem 1.2rem;
+  }
+}
+
+/* Media queries for mobile version */
