@@ -208,7 +208,7 @@ select {
   font-style: italic;
 }
 
-/* Error icon and text diplay */
+/* Error icon and text display */
 .error-icon,
 .error-text {
   display: none;
@@ -233,7 +233,7 @@ select {
   border: none;
   border-radius: 5px;
   box-shadow: inset 0 -4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.7rem;
   cursor: pointer;
 }
 
@@ -295,7 +295,7 @@ select {
     padding: 2rem;
   }
   .form-item input {
-    padding: 1rem 1rem 1rem 1.5rem;
+    padding: 1.2rem 1.2rem 1.2rem 1.7rem;
   }
 }
 
@@ -303,7 +303,6 @@ select {
   .form-section {
     margin-right: 5%;
   }
-
   .subscription {
     gap: 1rem;
   }
@@ -314,8 +313,46 @@ select {
     padding: 2rem;
   }
   .form-item input {
-    padding: 0.7rem 0.7rem 0.7rem 1.2rem;
+    padding: 1rem 1rem 1rem 1.5rem;
   }
 }
 
 /* Media queries for mobile version */
+@media only screen and (max-width: 800px) {
+  .subscription {
+    grid-template-columns: 1fr;
+    top: 0;
+    transform: translateX(-50%);
+    max-width: 375px;
+    height: 100svh;
+  }
+
+  .info {
+    margin-left: 0;
+    text-align: center;
+    line-height: 1.8;
+  }
+
+  .info h1 {
+    font-size: var(--fs-800);
+  }
+
+  .info p {
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .form-section {
+    margin-right: 0;
+    align-self: start;
+    padding: 0 1.5rem;
+  }
+
+  .trial-info {
+    padding: 1.5rem 3rem;
+  }
+
+  .form-item input {
+    padding: 1.2rem 1.2rem 1.2rem 1.7rem;
+  }
+}
