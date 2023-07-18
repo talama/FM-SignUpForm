@@ -294,7 +294,8 @@ select {
   .trial-form {
     padding: 2rem;
   }
-  .form-item input {
+  .form-item input,
+  .btn {
     padding: 1.2rem 1.2rem 1.2rem 1.7rem;
   }
 }
@@ -312,7 +313,8 @@ select {
   .trial-form {
     padding: 2rem;
   }
-  .form-item input {
+  .form-item input,
+  .btn {
     padding: 1rem 1rem 1rem 1.5rem;
   }
 }
@@ -330,7 +332,7 @@ select {
   .info {
     margin-left: 0;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.6;
   }
 
   .info h1 {
@@ -352,7 +354,17 @@ select {
     padding: 1.5rem 3rem;
   }
 
-  .form-item input {
-    padding: 1.2rem 1.2rem 1.2rem 1.7rem;
+  .trial-form {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .disclaimer {
+    line-height: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  .attribution {
+    display: none;
   }
 }
